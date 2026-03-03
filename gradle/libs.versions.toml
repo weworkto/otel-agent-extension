@@ -1,0 +1,15 @@
+[versions]
+otelAgent = "2.25.0"
+otelAgentAlpha = "2.25.0-alpha"
+otelSdk = "1.59.0"
+autoService = "1.1.1"
+junit = "5.14.3"
+
+[libraries]
+opentelemetry-bom = { module = "io.opentelemetry:opentelemetry-bom", version.ref = "otelSdk" }
+opentelemetry-api = { module = "io.opentelemetry:opentelemetry-api" }
+opentelemetry-javaagent-extension-api = { module = "io.opentelemetry.javaagent:opentelemetry-javaagent-extension-api", version.ref = "otelAgentAlpha" }
+auto-service = { module = "com.google.auto.service:auto-service", version.ref = "autoService" }
+auto-service-annotations = { module = "com.google.auto.service:auto-service-annotations", version.ref = "autoService" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
