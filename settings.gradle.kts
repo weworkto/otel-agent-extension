@@ -1,1 +1,1 @@
-rootProject.name = "otel-agent-extension"
+rootProject.name = "opentelemetry-javaagent-extensions"

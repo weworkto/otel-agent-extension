@@ -32,11 +32,6 @@ dependencies {
     testRuntimeOnly(libs.junit.platform.launcher)
 }
 
-tasks.jar {
-    archiveBaseName.set("opentelemetry-javaagent-extensions")
-    archiveVersion.set(version.toString())
-}
-
 tasks.test {
     useJUnitPlatform()
 }
