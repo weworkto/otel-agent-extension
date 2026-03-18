@@ -1,6 +1,11 @@
 # Changelog
 
-## 2.26.0 — 2026-03-18
+## Unreleased
+
+### Documentation
+
+- update README versions to 2.26.0
+- update CHANGELOG for 2.26.0
 
 ### Miscellaneous
 
