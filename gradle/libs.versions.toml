@@ -1,7 +1,7 @@
 [versions]
-otelAgent = "2.25.0"
-otelAgentAlpha = "2.25.0-alpha"
-otelSdk = "1.59.0"
+otelAgent = "2.26.0"
+otelAgentAlpha = "2.26.0-alpha"
+otelSdk = "1.60.1"
 autoService = "1.1.1"
 junit = "5.14.3"
 
