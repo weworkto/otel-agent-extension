@@ -2,7 +2,7 @@
 
 [![Build & Release](https://github.com/weworkto/opentelemetry-javaagent-extensions/actions/workflows/release.yml/badge.svg)](https://github.com/weworkto/opentelemetry-javaagent-extensions/actions/workflows/release.yml)
 [![GitHub Release](https://img.shields.io/github/v/release/weworkto/opentelemetry-javaagent-extensions?label=release)](https://github.com/weworkto/opentelemetry-javaagent-extensions/releases/latest)
-[![OTel Agent](https://img.shields.io/badge/OTel_Java_Agent-2.25.0-blueviolet)](https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/tag/v2.25.0)
+[![OTel Agent](https://img.shields.io/badge/OTel_Java_Agent-2.26.0-blueviolet)](https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/tag/v2.26.0)
 [![Java](https://img.shields.io/badge/Java-11%2B-orange)](https://adoptium.net/)
 [![Gradle](https://img.shields.io/badge/Gradle-9.3.1-02303A?logo=gradle)](https://gradle.org/)
 [![License](https://img.shields.io/github/license/weworkto/opentelemetry-javaagent-extensions)](LICENSE)
@@ -38,7 +38,7 @@ Grab the latest JAR from [Releases](https://github.com/weworkto/opentelemetry-ja
 
 ```bash
 curl -fsSL -o opentelemetry-javaagent-extensions.jar \
-  "https://github.com/weworkto/opentelemetry-javaagent-extensions/releases/download/2.25.0/opentelemetry-javaagent-extensions-2.25.0.jar"
+  "https://github.com/weworkto/opentelemetry-javaagent-extensions/releases/download/2.26.0/opentelemetry-javaagent-extensions-2.26.0.jar"
 ```
 
 ### 2. Run with your application
@@ -62,8 +62,8 @@ curl -si http://localhost:8080/api/health | grep -E "TraceId|SpanId"
 In a Dockerfile, download the extension alongside the OTel Java Agent:
 
 ```dockerfile
-ARG OTEL_AGENT_VERSION=2.25.0
-ARG OTEL_EXT_VERSION=2.25.0
+ARG OTEL_AGENT_VERSION=2.26.0
+ARG OTEL_EXT_VERSION=2.26.0
 
 RUN curl -fsSL -o /agent/opentelemetry-javaagent.jar \
     "https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/download/v${OTEL_AGENT_VERSION}/opentelemetry-javaagent.jar"
@@ -97,7 +97,7 @@ env:
 
 | Extension Version | OTel Java Agent | Java Runtime | Frameworks                                      |
 |-------------------|-----------------|--------------|-------------------------------------------------|
-| 2.25.0            | 2.25.0+         | 11+          | Spring Boot, Quarkus, Micronaut, Servlet, etc.  |
+| 2.26.0            | 2.26.0+         | 11+          | Spring Boot, Quarkus, Micronaut, Servlet, etc.  |
 
 The extension works with **any HTTP framework** that the OTel Java Agent instruments — no framework-specific configuration needed.
 
@@ -116,7 +116,7 @@ cd opentelemetry-javaagent-extensions
 ./gradlew build
 ```
 
-Output: `build/libs/opentelemetry-javaagent-extensions-2.25.0.jar`
+Output: `build/libs/opentelemetry-javaagent-extensions-2.26.0.jar`
 
 ### Test
 
@@ -143,8 +143,8 @@ opentelemetry-javaagent-extensions/
 Push a version tag to trigger automated build & release:
 
 ```bash
-git tag 2.25.0
-git push origin 2.25.0
+git tag 2.26.0
+git push origin 2.26.0
 ```
 
 GitHub Actions will build the JAR and create a [Release](https://github.com/weworkto/opentelemetry-javaagent-extensions/releases) with the artifact attached.

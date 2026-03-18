@@ -2,7 +2,7 @@
 
 [![Build & Release](https://github.com/weworkto/opentelemetry-javaagent-extensions/actions/workflows/release.yml/badge.svg)](https://github.com/weworkto/opentelemetry-javaagent-extensions/actions/workflows/release.yml)
 [![GitHub Release](https://img.shields.io/github/v/release/weworkto/opentelemetry-javaagent-extensions?label=release)](https://github.com/weworkto/opentelemetry-javaagent-extensions/releases/latest)
-[![OTel Agent](https://img.shields.io/badge/OTel_Java_Agent-2.25.0-blueviolet)](https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/tag/v2.25.0)
+[![OTel Agent](https://img.shields.io/badge/OTel_Java_Agent-2.26.0-blueviolet)](https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/tag/v2.26.0)
 [![Java](https://img.shields.io/badge/Java-11%2B-orange)](https://adoptium.net/)
 [![Gradle](https://img.shields.io/badge/Gradle-9.3.1-02303A?logo=gradle)](https://gradle.org/)
 [![License](https://img.shields.io/github/license/weworkto/opentelemetry-javaagent-extensions)](LICENSE)
@@ -38,7 +38,7 @@ SpanId: b7ad6b7169203331
 
 ```bash
 curl -fsSL -o opentelemetry-javaagent-extensions.jar \
-  "https://github.com/weworkto/opentelemetry-javaagent-extensions/releases/download/2.25.0/opentelemetry-javaagent-extensions-2.25.0.jar"
+  "https://github.com/weworkto/opentelemetry-javaagent-extensions/releases/download/2.26.0/opentelemetry-javaagent-extensions-2.26.0.jar"
 ```
 
 ### 2. 启动应用
@@ -62,8 +62,8 @@ curl -si http://localhost:8080/api/health | grep -E "TraceId|SpanId"
 在 Dockerfile 中与 OTel Java Agent 一起下载：
 
 ```dockerfile
-ARG OTEL_AGENT_VERSION=2.25.0
-ARG OTEL_EXT_VERSION=2.25.0
+ARG OTEL_AGENT_VERSION=2.26.0
+ARG OTEL_EXT_VERSION=2.26.0
 
 RUN curl -fsSL -o /agent/opentelemetry-javaagent.jar \
     "https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/download/v${OTEL_AGENT_VERSION}/opentelemetry-javaagent.jar"
@@ -97,7 +97,7 @@ env:
 
 | 扩展版本 | OTel Java Agent | Java 运行时 | 支持框架                              |
 |----------|-----------------|-------------|---------------------------------------|
-| 2.25.0   | 2.25.0+         | 11+         | Spring Boot、Quarkus、Micronaut、Servlet 等 |
+| 2.26.0   | 2.26.0+         | 11+         | Spring Boot、Quarkus、Micronaut、Servlet 等 |
 
 本扩展适用于 OTel Java Agent 支持的**所有 HTTP 框架**，无需针对特定框架做配置。
 
@@ -116,7 +116,7 @@ cd opentelemetry-javaagent-extensions
 ./gradlew build
 ```
 
-产物：`build/libs/opentelemetry-javaagent-extensions-2.25.0.jar`
+产物：`build/libs/opentelemetry-javaagent-extensions-2.26.0.jar`
 
 ### 测试
 
@@ -143,8 +143,8 @@ opentelemetry-javaagent-extensions/
 推送版本 tag 即可触发自动构建和发布：
 
 ```bash
-git tag 2.25.0
-git push origin 2.25.0
+git tag 2.26.0
+git push origin 2.26.0
 ```
 
 GitHub Actions 会自动构建 JAR 并创建 [Release](https://github.com/weworkto/opentelemetry-javaagent-extensions/releases)。
