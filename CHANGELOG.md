@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.26.0 — 2026-03-18
+
+### Miscellaneous
+
+- bump OTel Agent to 2.26.0, SDK to 1.60.1
 ## 2.25.0 — 2026-03-03
 
 ### Bug Fixes
@@ -16,6 +21,7 @@
 
 ### Miscellaneous
 
+- add git-cliff for CHANGELOG generation and release notes
 - use semver tag pattern and remove v prefix from URLs
 
 ### Refactor
